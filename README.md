@@ -6,4 +6,5 @@
 # Technologies
 
 - ☕ Java
-- 
+- 🔰 JavaScript
+- 🐘 PHP
