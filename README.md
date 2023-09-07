@@ -11,4 +11,4 @@
 <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/java_logo_icon_169577.png" alt="java" width="40" height="40" style="max-width:100%;"></img>
 
 
-![Mateus github stats](https://github-readme-stats.vercel.app/api?username=mateusantonioofc&show_icons=true&count_private=true&theme=radical)
+![Mateus github stats](https://github-readme-stats.vercel.app/api?username=mateusantonioofc&show_icons=true&count_private=true&theme=holi)
