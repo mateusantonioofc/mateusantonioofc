@@ -1,7 +1,6 @@
 # About-me
 
 - 👋 Hi, I’m Mateus Antonio, *Back-end* developer
-- 📔 I’m currently learning java
 
 ## My Skills
 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ruby_icon_130186.png" alt="ruby" width="40" height="40" style="max-width:100%;"></img>
