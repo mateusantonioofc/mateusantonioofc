@@ -79,3 +79,24 @@ a {
 #btn-a {    
     color: #fff;
 }
+
+@media only screen and (max-width: 700px) {
+
+    .logo {
+        height: 20%;
+        width: 10%;
+        margin-left: 5%;
+        margin-top: 0.5%;    
+    }
+    
+    .links {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        width: 75%;
+        justify-content: end;
+        margin-right: 3%;
+    }
+
+}
