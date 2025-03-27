@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.nav { 
+    background-color:white;
+    height: 15%;
+    display: flex;
+}
+
+#historia { 
+    background-color: yellow;
+    height: 50%;
+}
+
+#personagens { 
+    background-color: rgb(74, 118, 248);
+    height: 50%;
+}
+
+#frutas { 
+    background-color: rgb(241, 222, 8);
+    height: 50%;
+}
+
+#episodios { 
+    background-color: rgb(251, 180, 15);
+    height: 50%;
+}
+
+.logo {
+    height: 80%;
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 0.5%;    
+}
+
+.links {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    width: 85%;
+    justify-content: end;
+    margin-right: 3%;
+}
+
+.btn-nav {
+    background-color: rgb(74, 118, 248);
+    border: none;
+    border-radius: 10px;
+    width: relative;
+    height: 40px;
+    color: #fff
+}
+
+.btn-nav:hover {
+    background-color: rgb(22, 77, 242);
+    height: 45px;
+}
+
+a {
+    text-decoration:none
+}
+
+.nav-link {
+    color: rgb(22, 77, 242);
+}
+
+.nav-link:hover {
+    color: rgb(0, 30, 120);
+}
+
+#btn-a {    
+    color: #fff;
+}
