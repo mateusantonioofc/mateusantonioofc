@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #1a2530);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.instructions {
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-container {
+    width: 350px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #1a237e, #283593);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid gold;
+    position: relative;
+}
+
+.card-back-pattern {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 10px,
+        rgba(255, 215, 0, 0.1) 10px,
+        rgba(255, 215, 0, 0.1) 20px
+    );
+}
+
+.card-back .logo {
+    width: 80%;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+/* Estilo da frente da carta */
+.card-front {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #333;
+}
+
+.card-header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-badge {
+    background: gold;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-description {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    height: 80px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.card-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: auto;
+}
+
+.stat {
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 3px;
+    color: #2c3e50;
+}
+
+.card-footer {
+    height: 30px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.ods-1 { background: #e5243b; }
+.ods-2 { background: #dda63a; }
+.ods-3 { background: #4c9f38; }
+.ods-4 { background: #c5192d; }
+.ods-5 { background: #ff3a21; }
+.ods-6 { background: #26bde2; }
+.ods-7 { background: #fcc30b; color: black; }
+.ods-8 { background: #a21942; }
+.ods-9 { background: #fd6925; }
+.ods-10 { background: #dd1367; }
+.ods-11 { background: #fd9d24; color: black; }
+.ods-12 { background: #bf8b2e; }
+.ods-13 { background: #3f7e44; }
+.ods-14 { background: #0a97d9; }
+.ods-15 { background: #56c02b; }
+.ods-16 { background: #00689d; }
+.ods-17 { background: #19486a; }
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: #2980b9;
+}
+
+.nav-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+.card-counter {
+    color: white;
+    font-size: 1.1rem;
+    min-width: 120px;
+    text-align: center;
+}
+
+.card-selector {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card-selector h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.ods-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+}
+
+.ods-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.ods-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.ods-btn.current {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 300px;
+        height: 450px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+    
+    .card-description {
+        font-size: 13px;
+    }
+    
+    .ods-buttons {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+    
+    .ods-btn {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+}
