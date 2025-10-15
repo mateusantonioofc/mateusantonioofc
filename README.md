@@ -9,6 +9,5 @@
 ![Mateus github stats](https://github-readme-stats.vercel.app/api?username=mateusantonioofc&show_icons=true&count_private=true&theme=holi)
 
 <p align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=mateusantonioofc&show_icons=true&theme=dark"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateusantonioofc&layout=compact&theme=dark"/>
 </p>
